@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>남춘천중학교 통합정보시스템</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- iOS favicon-->
+    <link rel="apple-touch-icon" href="../favicon/favicon.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- iOS SPLASHSCREEN-->
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="../favicon/splashscreens/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <style>
+        .gradient {
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        }
+
+        @font-face {
+        src : url("../font/hanna.ttf"); 
+        font-family: "hanna" 
+        }
+
+        button, a, p, h1, h2, h3, h4, h5, h6, btn, div { 
+            font-family: "hanna";
+        }
+
+        #headerbtn {
+            margin-right:5px;
+        }
+
+        .navbar-brand {
+            font-size: 1.3rem;
+        }
+
+        #hhj {
+            font-size: 0.9rem;
+        }
+
+        #jdj {
+            font-size: 1.0rem;
+        }
+
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+                <div class="sidebar-brand-icon ">
+                    <img src= '../src/favicon/favicon.png' width="50">
+                </div>
+                <div class="sidebar-brand-text mx-3">남춘천중학교<br>통합정보시스템</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard
+            <li class="nav-item">
+                <a class="nav-link" href="index.ejs">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span id= "hhj">대시보드</span></a>
+            </li> -->
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item active">
+                <a class="nav-link" href="tables.ejs">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span id= "hhj">성적관리 대시보드</span></a>
+            </li>
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- 과목별 점수입력 -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>성적 수정하기</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">성적 수정하기</h6>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#korean" data-bs-whatever="@남춘천중학교성적관리">국어</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#english" data-bs-whatever="@남춘천중학교성적관리">영어</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#math" data-bs-whatever="@남춘천중학교성적관리">수학</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#science" data-bs-whatever="@남춘천중학교성적관리">과학</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#social" data-bs-whatever="@남춘천중학교성적관리">사회</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#history" data-bs-whatever="@남춘천중학교성적관리">역사</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#techome" data-bs-whatever="@남춘천중학교성적관리">기술.가정</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#art" data-bs-whatever="@남춘천중학교성적관리">미술</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#music" data-bs-whatever="@남춘천중학교성적관리">음악</a>
+                        <a class="collapse-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pe" data-bs-whatever="@남춘천중학교성적관리">체육</a>
+                    </div>
+                </div>
+            </li>
+
+            
+
+            <!--국어 모달-->
+            <div class="modal fade" id="korean" tabindex="-1" aria-labelledby="koreanedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">국어 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">이름</label>
+                        <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">1회고사</label>
+                        <input name="korean1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">2회고사</label>
+                            <input name="korean2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가1</label>
+                            <input name="koreaneval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가2</label>
+                            <input name="koreaneval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                            <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--영어 모달-->
+            <div class="modal fade" id="english" tabindex="-1" aria-labelledby="englishedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">영어 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">이름</label>
+                        <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">1회고사</label>
+                        <input name="english1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">2회고사</label>
+                            <input name="english2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가1</label>
+                            <input name="englisheval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가2</label>
+                            <input name="englisheval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                            <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--수학 모달-->
+            <div class="modal fade" id="math" tabindex="-1" aria-labelledby="mathedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">수학 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">이름</label>
+                            <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">1회고사</label>
+                            <input name="math1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">2회고사</label>
+                                <input name="math2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가1</label>
+                                <input name="matheval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가2</label>
+                                <input name="matheval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--과학 모달-->
+            <div class="modal fade" id="science" tabindex="-1" aria-labelledby="scienceedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">과학 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">이름</label>
+                            <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">1회고사</label>
+                            <input name="science1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">2회고사</label>
+                                <input name="science2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가1</label>
+                                <input name="scienceeval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가2</label>
+                                <input name="scienceeval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--사회 모달-->
+            <div class="modal fade" id="social" tabindex="-1" aria-labelledby="socialedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">사회 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">이름</label>
+                            <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">1회고사</label>
+                            <input name="social1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">2회고사</label>
+                                <input name="social2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가1</label>
+                                <input name="socialeval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가2</label>
+                                <input name="socialeval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--역사 모달-->
+            <div class="modal fade" id="history" tabindex="-1" aria-labelledby="historyedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">역사 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">이름</label>
+                            <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">1회고사</label>
+                            <input name="history1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">2회고사</label>
+                                <input name="history2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가1</label>
+                                <input name="historyeval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가2</label>
+                                <input name="historyeval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--기술.가정 모달-->
+            <div class="modal fade" id="techome" tabindex="-1" aria-labelledby="techomeedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">기술가정 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">이름</label>
+                            <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">1회고사</label>
+                            <input name="techome1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">2회고사</label>
+                                <input name="techome2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가1</label>
+                                <input name="techomeeval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">수행평가2</label>
+                                <input name="techomeeval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--미술 모달-->
+            <div class="modal fade" id="art" tabindex="-1" aria-labelledby="artedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">미술 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">이름</label>
+                        <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가1</label>
+                            <input name="arteval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가2</label>
+                            <input name="arteval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                            <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--음악 모달-->
+            <div class="modal fade" id="music" tabindex="-1" aria-labelledby="musicedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">음악 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">이름</label>
+                        <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가1</label>
+                            <input name="musiceval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가2</label>
+                            <input name="musiceval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                            <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--체육 모달-->
+            <div class="modal fade" id="pe" tabindex="-1" aria-labelledby="peedit" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="nccapply">체육 성적을 입력해주세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">이름</label>
+                        <input type="text" class="form-control" value="<%=user.passport.user.nickname%>" id="recipient-name" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가1</label>
+                            <input name="peeval1" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">수행평가2</label>
+                            <input name="peeval2" class="form-control" id="message-text" step="0.01" type="number" max="100" min="0" >
+                        </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                            <button type="submit" class="btn btn-primary">저장하기</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+    
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-3 d-3 d-lg-inline text-gray-900 large"><%if (user.passport.user.nickname) {%>
+                                     <%=user.passport.user.nickname%>님 환영합니다!
+                                    <% } else { %>
+                                        알수없음
+                                    <% } %></span>
+
+                                <%if (user.passport.user.profile_photo) {%>
+                                    <img class="img-profile rounded-circle" src= '<%=user.passport.user.profile_photo%>'>
+                                    <% } else { %>
+                                    <img class="img-profile rounded-circle" src= '../src/image/default_profile_image.jpg'>
+                                    <% } %>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a id="jdj" class="dropdown-item" href="/profile/<%=user.passport.user.kakaoid%>">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    프로필
+                                </a>
+                                <a id="jdj" class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    로그아웃
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">성적관리(개발중) 성적modal별 name 추가완료 백엔드 개발 ㄱ</h1>
+
+                    
+                    <!-- 성적입력 메인 3학년 -->  
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">성적 확인란</h6>
+                        </div>
+                        <div class="card-bod">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" >
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" width="100">#</th>
+                                        <th scope="col" width="100">국어</th>
+                                        <th scope="col" width="100">영어</th>
+                                        <th scope="col" width="100">수학</th>
+                                        <th scope="col" width="100">과학</th>
+                                        <th scope="col" width="100">사회</th>
+                                        <th scope="col" width="100">역사</th>
+                                        <th scope="col" width="100">기가</th>
+                                        <th scope="col" width="100">음악</th>
+                                        <th scope="col" width="100">미술</th>
+                                        <th scope="col" width="100">체육</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1회고사</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2회고사</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">수행평가1</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">수행평가2</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">수행평가3</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">수행평가4</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">과목 평균</th>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">성취도</th>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div id="copyright-div">
+                        <a id="privacy_policy" class="text-gray-500" href="https://ncc.sivelop.com/privacy_policy">개인정보처리방침</a>
+                        <a class="text-gray-500"> | </a>
+                        <a id="copyright" class="text-gray-500"></a>
+                      </div>
+                
+                    <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    document.getElementById("copyright").innerHTML = 'Copyright ' + year + ' 채은우&박시영. All Rights Reserved.';
+                    </script>
+                    <style>
+                      #copyright-div {
+                        text-align:center;
+                        padding-top: 1.5em;
+                        padding-bottom: 1.5em;
+                      }
+                    </style>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">로그아웃 하시겠습니까?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">로그아웃 후 메인페이지로 이동됩니다.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">취소</button>
+                    <a class="btn btn-primary" href="/logout">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/datatables-demo.js"></script>
+
+</script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+
+
+    // @breif contenteditable 속성을 가진경우
+
+    contents = document.getElementsByClassName("rowColumn");
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+
+
+        // @breif rowColumn 클래스의 갯수 만큼 반복문을 실행한다.
+
+        Array.from(contents).forEach(function(content) {
+
+
+
+            // @breif 마우스로 해당영역을 더블클릭 한경우
+
+            content.addEventListener("dblclick", function(event) {
+
+
+
+                // @breif 전체 테이블 컬럼( td > p )에서 현재 사용중인 값의 존재여부를 확인한다.
+
+                Array.from(contents).forEach(function(defaultVal) {
+
+
+
+                    /*
+                    // @details 빈값( null )이 존재하는지 체크한다.
+                    if(
+                           defaultVal.textContent == ""
+                        || defaultVal.textContent == null
+                        || defaultVal.textContent == undefined
+                        || (defaultVal.textContent != null
+                        && typeof defaultVal.textContent == "object"
+                        && !Object.keys(defaultVal.textContent).length == ""))
+                    {
+
+                        // @details 내용이 존재하지 않다면 data 태그의 기본값으로 되돌린다.
+                        defaultVal.textContent = defaultVal.dataset.default;
+                    }
+                    */
+
+                    // @details 저장하지 않은 내용이라고 판단하여 data 태그의 기본값으로 되돌린다.
+                    defaultVal.textContent = defaultVal.dataset.default;
+
+                    // @breif 수정 불가 상태로 되돌린다.
+
+                    defaultVal.contentEditable = false;
+
+                    defaultVal.style.border = "0px";
+
+                });
+
+
+
+                if(content.isContentEditable == false) {
+
+
+
+                    // @details 편집 가능 상태로 변경
+
+                    content.contentEditable = true;
+
+
+
+                    // @details 텍스트 문구 변경
+
+                    // content.textContent = "";
+
+
+
+                    // @details CSS 효과 추가
+
+                    content.style.border = "1px solid #FFB6C1";
+
+
+
+                    // @details 포커스 지정
+
+                    content.focus();
+
+                }
+
+            });
+
+
+
+            // @breif 키보드 입력이 방생한 경우 실행
+
+            content.addEventListener("keypress", function(event) {
+
+
+
+                // @breif Enter키 입력시 실행
+
+                if(event.key === "Enter") {
+
+
+
+                    // @details 입력된 값이 빈값( null )인지 체크한다.
+
+                    if(
+
+                           content.textContent == ""
+
+                        || content.textContent == null
+
+                        || content.textContent == undefined
+
+                        || (content.textContent != null
+
+                        && typeof content.textContent == "object"
+
+                        && !Object.keys(content.textContent).length == ""))
+
+                    {
+
+
+
+                        // @details 내용이 존재하지 않다면 data 태그의 기본값으로 되돌린다.
+
+                        content.textContent = content.dataset.default;
+
+                    } else {
+
+
+
+                        // @details 내용의 수정이 완료되었다면 data 태그의 기본값도 바꿔준다.
+
+                        content.dataset.default = content.textContent;
+
+                    }
+
+
+
+                    // @breif 수정 불가 상태로 되돌린다.
+
+                    content.contentEditable = false;
+
+                    content.style.border = "0px";
+
+                }
+
+            });
+
+        });
+
+    });
+
+</script>
